@@ -5,15 +5,11 @@ public class Person {
 
     public Person(String name, int age){
         this.name = name;
-        if (age < 0){
-            this.age = 0;
-        }else{
-            this.age = age;
-        }
+        this.age = 0;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = "";
     }
 
     public void setAge(int age){
@@ -25,14 +21,15 @@ public class Person {
     }
 
     public String getName() {
-        return name;
+        return "";
     }
 
     public int getAge() {
-        return age;
+        return 0;
     }
 
     public String reverseName(String name){
-        return new StringBuilder(name).reverse().toString();
+        return "";
+        //return new StringBuilder(name).reverse().toString();
     }
 }
